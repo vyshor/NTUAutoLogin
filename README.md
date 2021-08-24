@@ -1,8 +1,8 @@
 <h1 align="center">NTUAutoLogin</h1>
 
-*NTUAutoLogin is a chrome extension to help you auto login to NTULearn and related websites, as well as download some lecture videos.*
+*NTUAutoLogin is a chrome extension to help you auto login to NTULearn and related websites, download selected lecture videos.*
 
-### Installation Instructions
+## Installation Instructions
 **Google Chrome** 
 1. Download this repo as a [ZIP file from GitHub](https://github.com/vyshor/NTUAutoLogin/archive/refs/heads/master.zip).
 1. Unzip the file and you should have a folder named `NTUAutoLogin-master`.
@@ -16,13 +16,14 @@
 1. In Chrome, go to the extension shortcuts page (`chrome://extensions/shortcuts`).
 2. Look for `NTUAutoLogin`, and add a shortcut for `Activate the extension` (e.g. Alt + A)
 
-### Usage Instructions
+
+## Usage Instructions
 
 **Auto Login**
 1. Accessing the [NTULearn website](https://ntulearn.ntu.edu.sg/) and it should be automatically logged in. 
 2. It supports [OneSearch](https://ntu-sp.primo.exlibrisgroup.com/) too.
 
-**Download Lectures \[Does not support Kaltura\]**
+**Download Lectures** (Does not support Kaltura)
 1. Click on the `NTUAutoLogin` extension icon on Chrome toolbar
 2. Alternatively, if you have set up the shortcut keys previous, can use `Alt + A` to download the video immediately.
 
