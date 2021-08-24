@@ -20,12 +20,13 @@
 ## Usage Instructions
 
 **Auto Login**
-1. Accessing the [NTULearn website](https://ntulearn.ntu.edu.sg/) and it should be automatically logged in. 
-2. It supports [OneSearch](https://ntu-sp.primo.exlibrisgroup.com/) too.
+* Accessing the [NTULearn website](https://ntulearn.ntu.edu.sg/) and it should be automatically logged in. 
+* It supports [OneSearch](https://ntu-sp.primo.exlibrisgroup.com/) too.
 
 **Download Lectures** (Does not support Kaltura)
-1. Click on the `NTUAutoLogin` extension icon on Chrome toolbar
-2. Alternatively, if you have set up the shortcut keys previous, can use `Alt + A` to download the video immediately.
+1. Open the video in browser
+2. Click on the `NTUAutoLogin` extension icon on Chrome toolbar
+3. Alternatively, if you have set up the shortcut keys previous, can use `Alt + A` to download the video immediately.
 
 **Download Zoom Videos**
 1. Open the zoom recording link
