@@ -1,0 +1,118 @@
+{
+  "name": "NTUAutoLogin",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    { // NTULearn
+      "matches": [
+        "https://ntulearn.ntu.edu.sg/webapps/login/*"
+      ],
+      "js": [
+        "credentials.js",
+        "content_ntulearn.js"
+      ]
+    },
+    { // Course Registration v1
+      "matches": [
+        "https://loginfs.ntu.edu.sg/adfs/ls/*"
+      ],
+      "js": [
+        "credentials.js",
+        "content_ntulearn_new.js"
+      ]
+    },
+    { // Course Registration v2
+      "matches": [
+        "https://wish.wis.ntu.edu.sg/pls/webexe/ldap_login.login?w_url=*"
+      ],
+      "js": [
+        "credentials.js",
+        "content_ntulearn_new2.js"
+      ]
+    },
+    { // Course Registration v3
+      "matches": [
+        "https://wish.wis.ntu.edu.sg/pls/webexe/LDAP_login.login2"
+      ],
+      "js": [
+        "credentials.js",
+        "content_ntulearn_new2_2.js"
+      ]
+    },
+    { // OneSearch
+      "matches": [
+        "https://dcsvridp.ntu.edu.sg/idp/Authn/UserPassword"
+      ],
+      "js": [
+        "credentials.js",
+        "content_onesearch.js"
+      ]
+    },
+    { // OneSearch Term of Use
+      "matches": [
+        "https://remotexs.ntu.edu.sg/_legal/accept_new?destination=*"
+      ],
+      "js": [
+        "credentials.js",
+        "content_onesearchtermofuse.js"
+      ]
+    },
+    { // Degree Audit v1
+      "matches": [
+        "https://sso.wis.ntu.edu.sg/webexe88/owa/sso_login1.asp*"
+      ],
+      "js": [
+        "credentials.js",
+        "content_ntucourse.js"
+      ]
+    },
+    { // Degree Audit v1
+      "matches": [
+        "https://sso.wis.ntu.edu.sg/webexe88/owa/sso_login2.asp*"
+      ],
+      "js": [
+        "credentials.js",
+        "content_ntucourse2.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://ntu-sg.zoom.us/rec/play/*"
+      ],
+      "js": [
+        "content_zoomdownloadLink.js"
+      ]
+    },
+    { // Download Lectures
+      "matches": [
+        "https://*.ntu.edu.sg/aculearn-me/*",
+        "https://au.bbcollab.com/collab/ui/session/*"
+      ],
+      "js": [
+        "content_videodownload.js"
+      ]
+    }],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "NTUAutoLogin"
+  },
+  //  "background": {
+  //    "scripts": ["background.js"]
+  //  },
+  "permissions": [
+    "tabs",
+    "downloads"
+  ],
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Alt+A"
+      }
+    },
+    "_execute_page_action": {
+      "suggested_key": {
+        "default": "Alt+A"
+      }
+    }
+  }
+}
